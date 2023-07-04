@@ -28,9 +28,11 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        prompt
-        
-        
+
+        nombre=prompt(title="Dame un dato", prompt="Ingrese un nombre")
+        alert("EJ 02", message=nombre)
+
+
     
 if __name__ == "__main__":
     app = App()
