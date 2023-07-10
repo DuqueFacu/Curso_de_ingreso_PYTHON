@@ -1,3 +1,4 @@
+from operator import truediv
 import tkinter
 from tkinter.messagebox import showinfo as alert
 from tkinter.messagebox import askyesno as question
@@ -5,8 +6,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre:facundo
+apellido:duque
 ---
 Ejercicio: instrucion_if_02
 ---
@@ -34,7 +35,11 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        edad=int(self.txt_edad.get())
+
+        if(edad >=18):
+            alert(title="respuesta", message="MAYOR")
+            
 
         
         
